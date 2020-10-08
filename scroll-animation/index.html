@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Animation</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- jquery -->
+    <script src="http://code.jquery.com/jquery-3.2.0.min.js"></script>
+    <!-- fullpage js -->
+    <script src="jquery.fullpage.min.js"></script>
+    <!-- fastclick js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+  </head>
+  <body>
+    <div id="containers" class="main">
+      <section id="container-1" class="container">Page 1</section>
+      <section id="container-2" class="container">Page 2</section>
+      <section id="container-3" class="container">Page 3</section>
+      <section id="container-4" class="container">Page 4</section>
+    </div>
+    <script>
+      $("#containers").fullpage();
+      FastClick.attach(document.body);
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>

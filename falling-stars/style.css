@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", "Arial";
+  margin: 0;
+  min-height: 100vh;
+}
+
+.star {
+  position: fixed;
+  top: -1vh;
+  font-size: 2rem;
+  transform: translateY(0);
+  animation: fall-and-rotate 3s linear forwards;
+}
+
+.moon {
+  position: fixed;
+  top: -1vh;
+  font-size: 4rem;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall-and-rotate {
+  100% {
+    transform: translateY(105vh) rotate(180deg);
+  }
+  50% {
+    transform: translateY(52.5vh) rotate(-180deg);
+  }
+  0% {
+    transform: translateY(0vh);
+  }
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
